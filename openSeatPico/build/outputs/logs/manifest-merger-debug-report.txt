@@ -1,0 +1,306 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:2:1-37:12
+MERGED from [com.google.android.gms:play-services-ads:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-9.6.1.aar/4fdf625ed769f24ed35bfeafa7867414/AndroidManifest.xml:16:1-18:12
+MERGED from [com.google.android.gms:play-services-auth:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-auth-9.6.1.aar/180621664b8f5f22e74267beb081302e/AndroidManifest.xml:16:1-26:12
+MERGED from [com.google.firebase:firebase-messaging:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-messaging-9.6.1.aar/6143fb990cd65683d513f331632cc315/AndroidManifest.xml:16:1-30:12
+MERGED from [com.google.android.gms:play-services-ads-lite:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.6.1.aar/e5a79858a458c9796f6bc75ec4917f80/AndroidManifest.xml:16:1-28:12
+MERGED from [com.google.android.gms:play-services-clearcut:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-9.6.1.aar/8708f30336f66a9c5d63ce8949bdc974/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-auth-base:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-9.6.1.aar/54c12178bb91649c32a1d6163c2c37e1/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-base:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-base-9.6.1.aar/43810c2eefcbe37fba50b61ce0ec23f8/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-gass:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-gass-9.6.1.aar/1bb704592d301d65ea2f6addd467a936/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:16:1-51:12
+MERGED from [com.google.firebase:firebase-common:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-common-9.6.1.aar/c1473791c08efc3ffc2382b0fb433dd7/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-tasks:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-tasks-9.6.1.aar/d2ec61a6d30a45f82186078ecfe135dc/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.6.1.aar/aac738cf842ea51402a72e98e5c62b56/AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:support-v4:24.0.0] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/4c704b14f93b655cdba4f3944d94c3f2/AndroidManifest.xml:17:1-27:12
+INJECTED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:2:1-37:12
+	package
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:3:5-37
+	android:versionName
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml
+		INJECTED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml
+		INJECTED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-ads:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-9.6.1.aar/4fdf625ed769f24ed35bfeafa7867414/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-ads:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-9.6.1.aar/4fdf625ed769f24ed35bfeafa7867414/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-auth:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-auth-9.6.1.aar/180621664b8f5f22e74267beb081302e/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-auth:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-auth-9.6.1.aar/180621664b8f5f22e74267beb081302e/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-messaging:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-messaging-9.6.1.aar/6143fb990cd65683d513f331632cc315/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-messaging:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-messaging-9.6.1.aar/6143fb990cd65683d513f331632cc315/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-ads-lite:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.6.1.aar/e5a79858a458c9796f6bc75ec4917f80/AndroidManifest.xml:22:5-42
+MERGED from [com.google.android.gms:play-services-ads-lite:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.6.1.aar/e5a79858a458c9796f6bc75ec4917f80/AndroidManifest.xml:22:5-42
+MERGED from [com.google.android.gms:play-services-clearcut:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-9.6.1.aar/8708f30336f66a9c5d63ce8949bdc974/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-clearcut:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-9.6.1.aar/8708f30336f66a9c5d63ce8949bdc974/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-auth-base:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-9.6.1.aar/54c12178bb91649c32a1d6163c2c37e1/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-auth-base:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-9.6.1.aar/54c12178bb91649c32a1d6163c2c37e1/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-base:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-base-9.6.1.aar/43810c2eefcbe37fba50b61ce0ec23f8/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-base-9.6.1.aar/43810c2eefcbe37fba50b61ce0ec23f8/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-gass:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-gass-9.6.1.aar/1bb704592d301d65ea2f6addd467a936/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-gass:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-gass-9.6.1.aar/1bb704592d301d65ea2f6addd467a936/AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-common:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-common-9.6.1.aar/c1473791c08efc3ffc2382b0fb433dd7/AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-common:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-common-9.6.1.aar/c1473791c08efc3ffc2382b0fb433dd7/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-tasks-9.6.1.aar/d2ec61a6d30a45f82186078ecfe135dc/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-tasks-9.6.1.aar/d2ec61a6d30a45f82186078ecfe135dc/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.6.1.aar/aac738cf842ea51402a72e98e5c62b56/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.6.1.aar/aac738cf842ea51402a72e98e5c62b56/AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:support-v4:24.0.0] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/4c704b14f93b655cdba4f3944d94c3f2/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:24.0.0] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/4c704b14f93b655cdba4f3944d94c3f2/AndroidManifest.xml:21:5-23:54
+INJECTED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:24.0.0] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/4c704b14f93b655cdba4f3944d94c3f2/AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:9:9-38
+		INJECTED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml
+		INJECTED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:8:9-35
+		INJECTED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml
+		INJECTED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:11:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:12:5-74
+	android:name
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:12:22-71
+uses-permission#android.permission.INTERNET
+ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:13:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.6.1.aar/e5a79858a458c9796f6bc75ec4917f80/AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-ads-lite:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.6.1.aar/e5a79858a458c9796f6bc75ec4917f80/AndroidManifest.xml:19:5-66
+MERGED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:13:22-64
+uses-feature#android.hardware.bluetooth_le
+ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:15:5-90
+	android:required
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:15:64-87
+	android:name
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:15:19-63
+application
+ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:17:5-36:19
+MERGED from [com.google.android.gms:play-services-auth:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-auth-9.6.1.aar/180621664b8f5f22e74267beb081302e/AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-auth:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-auth-9.6.1.aar/180621664b8f5f22e74267beb081302e/AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.firebase:firebase-messaging:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-messaging-9.6.1.aar/6143fb990cd65683d513f331632cc315/AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.firebase:firebase-messaging:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-messaging-9.6.1.aar/6143fb990cd65683d513f331632cc315/AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.android.gms:play-services-ads-lite:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.6.1.aar/e5a79858a458c9796f6bc75ec4917f80/AndroidManifest.xml:23:5-27:19
+MERGED from [com.google.android.gms:play-services-ads-lite:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.6.1.aar/e5a79858a458c9796f6bc75ec4917f80/AndroidManifest.xml:23:5-27:19
+MERGED from [com.google.android.gms:play-services-clearcut:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-9.6.1.aar/8708f30336f66a9c5d63ce8949bdc974/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-clearcut:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-9.6.1.aar/8708f30336f66a9c5d63ce8949bdc974/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-base-9.6.1.aar/43810c2eefcbe37fba50b61ce0ec23f8/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-base-9.6.1.aar/43810c2eefcbe37fba50b61ce0ec23f8/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-gass:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-gass-9.6.1.aar/1bb704592d301d65ea2f6addd467a936/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-gass:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-gass-9.6.1.aar/1bb704592d301d65ea2f6addd467a936/AndroidManifest.xml:4:5-19
+MERGED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:28:5-50:19
+MERGED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:28:5-50:19
+MERGED from [com.google.firebase:firebase-common:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-common-9.6.1.aar/c1473791c08efc3ffc2382b0fb433dd7/AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.firebase:firebase-common:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-common-9.6.1.aar/c1473791c08efc3ffc2382b0fb433dd7/AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-tasks-9.6.1.aar/d2ec61a6d30a45f82186078ecfe135dc/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-tasks-9.6.1.aar/d2ec61a6d30a45f82186078ecfe135dc/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.6.1.aar/aac738cf842ea51402a72e98e5c62b56/AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.6.1.aar/aac738cf842ea51402a72e98e5c62b56/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:24.0.0] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/4c704b14f93b655cdba4f3944d94c3f2/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.0.0] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/4c704b14f93b655cdba4f3944d94c3f2/AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:22:9-41
+	android:hardwareAccelerated
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:19:9-44
+	android:largeHeap
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:20:9-33
+	android:icon
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:21:9-45
+	android:allowBackup
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:18:9-35
+	android:theme
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:23:9-40
+activity#com.smarttechx.rfduino.MainActivity
+ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:24:9-33:20
+	android:screenOrientation
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:27:13-49
+	android:label
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:26:13-45
+	android:name
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:25:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:28:13-32:29
+action#android.intent.action.MAIN
+ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:29:17-69
+	android:name
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:29:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:31:17-77
+	android:name
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:31:27-74
+service#com.smarttechx.rfduino.RFduinoService
+ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:35:9-51
+	android:name
+		ADDED from /Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/src/main/AndroidManifest.xml:35:18-48
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-auth-9.6.1.aar/180621664b8f5f22e74267beb081302e/AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-auth-9.6.1.aar/180621664b8f5f22e74267beb081302e/AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-auth-9.6.1.aar/180621664b8f5f22e74267beb081302e/AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-auth-9.6.1.aar/180621664b8f5f22e74267beb081302e/AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-auth-9.6.1.aar/180621664b8f5f22e74267beb081302e/AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-auth-9.6.1.aar/180621664b8f5f22e74267beb081302e/AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-auth-9.6.1.aar/180621664b8f5f22e74267beb081302e/AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-auth-9.6.1.aar/180621664b8f5f22e74267beb081302e/AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-auth-9.6.1.aar/180621664b8f5f22e74267beb081302e/AndroidManifest.xml:24:18-63
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-messaging-9.6.1.aar/6143fb990cd65683d513f331632cc315/AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-messaging-9.6.1.aar/6143fb990cd65683d513f331632cc315/AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-messaging-9.6.1.aar/6143fb990cd65683d513f331632cc315/AndroidManifest.xml:23:18-87
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-messaging-9.6.1.aar/6143fb990cd65683d513f331632cc315/AndroidManifest.xml:24:13-26:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-messaging-9.6.1.aar/6143fb990cd65683d513f331632cc315/AndroidManifest.xml:24:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-messaging-9.6.1.aar/6143fb990cd65683d513f331632cc315/AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-messaging-9.6.1.aar/6143fb990cd65683d513f331632cc315/AndroidManifest.xml:25:25-75
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-ads-lite:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.6.1.aar/e5a79858a458c9796f6bc75ec4917f80/AndroidManifest.xml:20:5-78
+MERGED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:19:5-78
+MERGED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.6.1.aar/e5a79858a458c9796f6bc75ec4917f80/AndroidManifest.xml:20:22-76
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.6.1.aar/e5a79858a458c9796f6bc75ec4917f80/AndroidManifest.xml:25:9-232
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.6.1.aar/e5a79858a458c9796f6bc75ec4917f80/AndroidManifest.xml:25:72-181
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.6.1.aar/e5a79858a458c9796f6bc75ec4917f80/AndroidManifest.xml:25:182-230
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.6.1.aar/e5a79858a458c9796f6bc75ec4917f80/AndroidManifest.xml:25:19-71
+activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.6.1.aar/e5a79858a458c9796f6bc75ec4917f80/AndroidManifest.xml:26:9-131
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.6.1.aar/e5a79858a458c9796f6bc75ec4917f80/AndroidManifest.xml:26:92-129
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.6.1.aar/e5a79858a458c9796f6bc75ec4917f80/AndroidManifest.xml:26:19-91
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-base-9.6.1.aar/43810c2eefcbe37fba50b61ce0ec23f8/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-base-9.6.1.aar/43810c2eefcbe37fba50b61ce0ec23f8/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-base-9.6.1.aar/43810c2eefcbe37fba50b61ce0ec23f8/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-base-9.6.1.aar/43810c2eefcbe37fba50b61ce0ec23f8/AndroidManifest.xml:19:19-85
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:21:22-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:22:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:24:17-71
+permission#com.smarttechx.rfduino.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:26:22-76
+uses-permission#com.smarttechx.rfduino.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:30:9-36:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:30:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:31:13-35:29
+intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+com.smarttechx.rfduino
+ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:31:13-35:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:32:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:32:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:33:17-85
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:33:25-83
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:34:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:34:27-58
+category#com.smarttechx.rfduino
+ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:34:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:34:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:40:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:40:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:40:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:44:9-48:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:44:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:44:18-82
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:45:13-47:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:45:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:46:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.6.1.aar/f978b7c1259de59636d29bb7266f5dbe/AndroidManifest.xml:46:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-common-9.6.1.aar/c1473791c08efc3ffc2382b0fb433dd7/AndroidManifest.xml:6:9-175
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-common-9.6.1.aar/c1473791c08efc3ffc2382b0fb433dd7/AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-common-9.6.1.aar/c1473791c08efc3ffc2382b0fb433dd7/AndroidManifest.xml:6:125-149
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-common-9.6.1.aar/c1473791c08efc3ffc2382b0fb433dd7/AndroidManifest.xml:6:150-173
+	android:name
+		ADDED from [com.google.firebase:firebase-common:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/firebase-common-9.6.1.aar/c1473791c08efc3ffc2382b0fb433dd7/AndroidManifest.xml:6:79-124
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.6.1.aar/aac738cf842ea51402a72e98e5c62b56/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.6.1.aar/aac738cf842ea51402a72e98e5c62b56/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:9.6.1] /Users/dieppedalle/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.6.1.aar/aac738cf842ea51402a72e98e5c62b56/AndroidManifest.xml:20:20-65

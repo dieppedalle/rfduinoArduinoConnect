@@ -1,0 +1,4 @@
+#Tue Nov 14 18:08:47 PST 2017
+base.0=/Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/build/intermediates/transforms/dexMerger/debug/0/classes.dex
