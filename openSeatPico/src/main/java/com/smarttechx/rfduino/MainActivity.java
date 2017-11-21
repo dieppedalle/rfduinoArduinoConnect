@@ -74,12 +74,13 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
         }
     };
 
-    private final ServiceConnection rfduinoServiceConnection = new ServiceConnection() {
+    private ServiceConnection rfduinoServiceConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             rfduinoService = ((RFduinoService.LocalBinder) service).getService();
             if (rfduinoService.initialize()) {
                 if (rfduinoService.connect(bluetoothDevice.getAddress())) {
+
                     upgradeState(STATE_CONNECTING);
                 }
             }
@@ -92,10 +93,12 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
         }
     };
 
-    private final BroadcastReceiver rfduinoReceiver = new BroadcastReceiver() {
+    public BroadcastReceiver rfduinoReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
+            System.out.println("REEEECCCCEIVING");
             final String action = intent.getAction();
+
             if (RFduinoService.ACTION_CONNECTED.equals(action)) {
                 upgradeState(STATE_CONNECTED);
             } else if (RFduinoService.ACTION_DISCONNECTED.equals(action)) {
@@ -140,6 +143,39 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
 
                 //System.out.println(floatStr);
                 addDatastr(floatStr);
+
+                System.out.println(floatStr);
+
+                rfduinoService = null;
+                unregisterReceiver(this);
+                System.out.println("KKKKKK");
+                System.out.println(RFduinoService.UUID_SERVICE);
+                RFduinoService.UUID_SERVICE = BluetoothHelper.sixteenBitUuid(0x2220);
+                RFduinoService.UUID_RECEIVE = BluetoothHelper.sixteenBitUuid(0x2221);
+                RFduinoService.UUID_SEND = BluetoothHelper.sixteenBitUuid(0x2222);
+                RFduinoService.UUID_DISCONNECT = BluetoothHelper.sixteenBitUuid(0x2223);
+                RFduinoService.UUID_CLIENT_CONFIGURATION = BluetoothHelper.sixteenBitUuid(0x2902);
+
+                System.out.println(RFduinoService.UUID_SERVICE);
+
+                System.out.println("STOPPING SCAN");
+                //nregisterReceiver(scanModeReceiver);
+                //unregisterReceiver(bluetoothStateReceiver);
+                //unregisterReceiver(rfduinoReceiver);
+
+                scanStarted = false;
+                disconnectButton.setEnabled(false);
+                //rfduinoService.disconnect();
+                //bluetoothAdapter.disable();
+                registerReceiver(rfduinoReceiver, RFduinoService.getIntentFilter());
+
+                bluetoothAdapter.startLeScan(
+                        new UUID[]{RFduinoService.UUID_SERVICE},
+                        MainActivity.this);
+
+                System.out.println("NEXT");
+
+                //downgradeState(STATE_DISCONNECTED);
                 /*if (count<2 && hex!="41"){
                     count++;
                     String ascii=hexToAscii(hex);
@@ -173,6 +209,7 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
         bluetoothAdapter.enable();
         scanStarted = true;
         System.out.println("Starting Scan Device 1.");
+        //System.out.println(BluetoothHelper.sixteenBitUuid(0x4000));
         System.out.println(RFduinoService.UUID_SERVICE);
 
         bluetoothAdapter.startLeScan(
@@ -180,6 +217,9 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
                 MainActivity.this);
 
         System.out.println(":(");
+
+
+        System.out.println(":)");
         //////////////////
 
         // Connect Device
@@ -238,6 +278,7 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
     protected void onStart() {
         super.onStart();
 
+        System.out.println("IIIIII");
         registerReceiver(scanModeReceiver, new IntentFilter(BluetoothAdapter.ACTION_SCAN_MODE_CHANGED));
         registerReceiver(bluetoothStateReceiver, new IntentFilter(BluetoothAdapter.ACTION_STATE_CHANGED));
         registerReceiver(rfduinoReceiver, RFduinoService.getIntentFilter());
@@ -377,7 +418,24 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
         System.out.println("Connecting...");
         Intent rfduinoIntent = new Intent(MainActivity.this, RFduinoService.class);
         System.out.println("-----------");
-        bindService(rfduinoIntent, rfduinoServiceConnection, BIND_AUTO_CREATE);
+        bindService(rfduinoIntent, new ServiceConnection() {
+            @Override
+            public void onServiceConnected(ComponentName name, IBinder service) {
+                rfduinoService = ((RFduinoService.LocalBinder) service).getService();
+                if (rfduinoService.initialize()) {
+                    if (rfduinoService.connect(bluetoothDevice.getAddress())) {
+
+                        upgradeState(STATE_CONNECTING);
+                    }
+                }
+            }
+
+            @Override
+            public void onServiceDisconnected(ComponentName name) {
+                rfduinoService = null;
+                downgradeState(STATE_DISCONNECTED);
+            }
+        }, BIND_AUTO_CREATE);
     }
 }
 

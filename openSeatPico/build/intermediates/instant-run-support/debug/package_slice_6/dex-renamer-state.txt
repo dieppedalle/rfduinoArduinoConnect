@@ -1,4 +1,4 @@
-#Mon Nov 20 20:12:51 PST 2017
-base.0=/Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/build/intermediates/transforms/dexMerger/debug/6
+#Tue Nov 21 15:02:31 PST 2017
+base.0=/Users/dieppedalle/Documents/College/UCB/CS294InteractiveDeviceDesign/rfduinoArduinoConnect/openSeatPico/build/intermediates/transforms/dexMerger/debug/7
+path.0=classes.dex
 renamed.0=classes.dex
-file.0=/Users/dieppedalle/Desktop/RFDUINOSample/openSeatPico/build/intermediates/transforms/dexMerger/debug/6/classes.dex
