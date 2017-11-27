@@ -19,7 +19,7 @@ import android.widget.TextView;
 import java.math.BigDecimal;
 import java.math.MathContext;
 import java.util.UUID;
-
+import java.util.Vector;
 
 
 public class MainActivity extends Activity implements BluetoothAdapter.LeScanCallback {
@@ -50,8 +50,8 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
     private TextView valOne;
     int count=0;
     String valget, val1,val2;
-
-
+    Vector addressesRead = new Vector();
+    String deviceName = "OpenSeat2";
 
     private final BroadcastReceiver bluetoothStateReceiver = new BroadcastReceiver() {
         @Override
@@ -125,25 +125,47 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
                 float copyFloat = asFloat;
 
                 BigDecimal bd = new BigDecimal(copyFloat);
-                bd = bd.round(new MathContext(3));
+                bd = bd.round(new MathContext(2));
                 double rounded = bd.doubleValue();
 
                 String floatStr = Double.toString(rounded);
                 String status = "2";
                 String urlServer = "";
 
+
+                String currentID = "0x3000";
+
+                if ( RFduinoService.UUID_SERVICE.equals(BluetoothHelper.sixteenBitUuid(0x3000))) {
+                    currentID = "0x3000";
+                    deviceName = "OpenSeat2";
+                }
+                else if ( RFduinoService.UUID_SERVICE.equals(BluetoothHelper.sixteenBitUuid(0x4000))) {
+                    currentID = "0x4000";
+                    deviceName = "OpenSeat3";
+                }
+                else if ( RFduinoService.UUID_SERVICE.equals(BluetoothHelper.sixteenBitUuid(0x5000))) {
+                    currentID = "0x5000";
+                    deviceName = "OpenSeat4";
+                }
+                else if ( RFduinoService.UUID_SERVICE.equals(BluetoothHelper.sixteenBitUuid(0x2220))) {
+
+                    currentID = "0x2220";
+                    deviceName = "OpenSeat1";
+                }
+
                 if (rounded > 1.5){
                     status = "0";
-                    urlServer = "http://openseat.mirrim-game.com/insertStatus.php?id=123456789&pressureValue=" + floatStr + "&status=" + status;
+                    urlServer = "http://openseat.mirrim-game.com/insertStatus.php?id=" + currentID + "&pressureValue=" + floatStr + "&status=" + status;
                 }
                 else{
-                    urlServer = "http://openseat.mirrim-game.com/insertStatus.php?id=123456789&pressureValue=" + floatStr + "&status=" + status;
+                    urlServer = "http://openseat.mirrim-game.com/insertStatus.php?id=" + currentID + "&pressureValue=" + floatStr + "&status=" + status;
                 }
                 //System.out.println(urlServer);
                 new RequestTask().execute(urlServer);
 
                 //System.out.println(floatStr);
-                addDatastr(floatStr);
+                addDatastr(floatStr, deviceName);
+                //bluetoothDevice.getName()
 
                 System.out.println(floatStr);
 
@@ -154,7 +176,6 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
                 System.out.println(bluetoothDevice.getName());
 
                 if ( RFduinoService.UUID_SERVICE.equals(BluetoothHelper.sixteenBitUuid(0x3000))) {
-                    System.out.println("{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{");
                     RFduinoService.UUID_SERVICE = BluetoothHelper.sixteenBitUuid(0x2220);
                     RFduinoService.UUID_RECEIVE = BluetoothHelper.sixteenBitUuid(0x2221);
                     RFduinoService.UUID_SEND = BluetoothHelper.sixteenBitUuid(0x2222);
@@ -162,13 +183,29 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
                     RFduinoService.UUID_CLIENT_CONFIGURATION = BluetoothHelper.sixteenBitUuid(0x2902);
                 }
                 else if ( RFduinoService.UUID_SERVICE.equals(BluetoothHelper.sixteenBitUuid(0x2220))) {
-                    System.out.println("|||||||||||||||||||||||||||||||||||||||||");
+                    RFduinoService.UUID_SERVICE = BluetoothHelper.sixteenBitUuid(0x4000);
+                    RFduinoService.UUID_RECEIVE = BluetoothHelper.sixteenBitUuid(0x4001);
+                    RFduinoService.UUID_SEND = BluetoothHelper.sixteenBitUuid(0x4002);
+                    RFduinoService.UUID_DISCONNECT = BluetoothHelper.sixteenBitUuid(0x4003);
+                    RFduinoService.UUID_CLIENT_CONFIGURATION = BluetoothHelper.sixteenBitUuid(0x2902);
+                }
+                else if ( RFduinoService.UUID_SERVICE.equals(BluetoothHelper.sixteenBitUuid(0x4000))) {
+                    RFduinoService.UUID_SERVICE = BluetoothHelper.sixteenBitUuid(0x5000);
+                    RFduinoService.UUID_RECEIVE = BluetoothHelper.sixteenBitUuid(0x5001);
+                    RFduinoService.UUID_SEND = BluetoothHelper.sixteenBitUuid(0x5002);
+                    RFduinoService.UUID_DISCONNECT = BluetoothHelper.sixteenBitUuid(0x5003);
+                    RFduinoService.UUID_CLIENT_CONFIGURATION = BluetoothHelper.sixteenBitUuid(0x2902);
+                }
+                else if ( RFduinoService.UUID_SERVICE.equals(BluetoothHelper.sixteenBitUuid(0x5000))) {
                     RFduinoService.UUID_SERVICE = BluetoothHelper.sixteenBitUuid(0x3000);
                     RFduinoService.UUID_RECEIVE = BluetoothHelper.sixteenBitUuid(0x3001);
                     RFduinoService.UUID_SEND = BluetoothHelper.sixteenBitUuid(0x3002);
                     RFduinoService.UUID_DISCONNECT = BluetoothHelper.sixteenBitUuid(0x3003);
                     RFduinoService.UUID_CLIENT_CONFIGURATION = BluetoothHelper.sixteenBitUuid(0x2902);
                 }
+
+
+
 
                 System.out.println(RFduinoService.UUID_SERVICE);
 
@@ -189,7 +226,7 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
                         new UUID[]{RFduinoService.UUID_SERVICE},
                         MainActivity.this);
 
-                System.out.println("NEXT");
+                //System.out.println("NEXT");
 
                 //downgradeState(STATE_DISCONNECTED);
                 /*if (count<2 && hex!="41"){
@@ -238,6 +275,7 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
         System.out.println(":)");
         //////////////////
 
+        deviceInfoText.setText("");
         // Connect Device
         connectionStatusText = (TextView) findViewById(R.id.connectionStatus);
         scanButton = (Button) findViewById(R.id.scan);
@@ -304,7 +342,7 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
 
     @Override
     protected void onStop() {
-        System.out.println("STOPPING SCAN");
+        //System.out.println("STOPPING SCAN");
         super.onStop();
         bluetoothAdapter.stopLeScan(this);
         unregisterReceiver(scanModeReceiver);
@@ -382,10 +420,13 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
         String ascii=hexToAscii(hex);
         valOne.setText(ascii+"."+"00mA");
     }
-    private void addDatastr(String data) {
+    private void addDatastr(String data, String deviceName) {
         // String ascii = HexAsciiHelper.bytesToAsciiMaybe(data);
         valOne = (TextView) findViewById(R.id.valueone);
-        valOne.setText(data + "V");
+        //valOne.setText(bluetoothDevice.getName());
+        //valOne.append(data + "V");
+        valOne.setText(deviceName + ": " + data + "V");
+
         /*if(data.length()==4){
             val1=data.substring(0,2);
             val2=data.substring(2,4);
@@ -420,8 +461,7 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
         MainActivity.this.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                deviceInfoText.setText(
-                        BluetoothHelper.getDeviceInfoText(bluetoothDevice, rssi, scanRecord));
+
                 updateUi();
             }
         });
@@ -440,7 +480,13 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
                 rfduinoService = ((RFduinoService.LocalBinder) service).getService();
                 if (rfduinoService.initialize()) {
                     if (rfduinoService.connect(bluetoothDevice.getAddress())) {
-
+                        if (!addressesRead.contains(bluetoothDevice.getAddress())) {
+                            deviceInfoText.append("\n");
+                            deviceInfoText.append("\n");
+                            deviceInfoText.append(
+                                    BluetoothHelper.getDeviceInfoText(bluetoothDevice, rssi, scanRecord));
+                            addressesRead.add(bluetoothDevice.getAddress());
+                        }
                         upgradeState(STATE_CONNECTING);
                     }
                 }

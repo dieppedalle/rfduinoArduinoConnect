@@ -1,4 +1,4 @@
-#Tue Nov 21 11:28:02 PST 2017
-base.0=/Users/dieppedalle/Documents/College/UCB/CS294InteractiveDeviceDesign/rfduinoArduinoConnect/openSeatPico/build/intermediates/transforms/dexMerger/debug/5
+#Sun Nov 26 16:03:50 PST 2017
+base.0=/Users/dieppedalle/Documents/College/UCB/CS294InteractiveDeviceDesign/rfduinoArduinoConnect/openSeatPico/build/intermediates/transforms/dexMerger/debug/4
 path.0=classes.dex
 renamed.0=classes.dex
