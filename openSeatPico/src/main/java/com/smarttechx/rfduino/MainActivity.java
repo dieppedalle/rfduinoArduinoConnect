@@ -167,13 +167,14 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
                 addDatastr(floatStr, deviceName);
                 //bluetoothDevice.getName()
 
+                System.out.println(deviceName);
                 System.out.println(floatStr);
 
                 rfduinoService = null;
                 unregisterReceiver(this);
-                System.out.println("KKKKKK");
-                System.out.println(RFduinoService.UUID_SERVICE);
-                System.out.println(bluetoothDevice.getName());
+                //System.out.println("KKKKKK");
+                //System.out.println(RFduinoService.UUID_SERVICE);
+
 
                 if ( RFduinoService.UUID_SERVICE.equals(BluetoothHelper.sixteenBitUuid(0x3000))) {
                     RFduinoService.UUID_SERVICE = BluetoothHelper.sixteenBitUuid(0x2220);
@@ -207,9 +208,9 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
 
 
 
-                System.out.println(RFduinoService.UUID_SERVICE);
+                //System.out.println(RFduinoService.UUID_SERVICE);
 
-                System.out.println("STOPPING SCAN");
+                //System.out.println("STOPPING SCAN");
                 //nregisterReceiver(scanModeReceiver);
                 //unregisterReceiver(bluetoothStateReceiver);
                 //unregisterReceiver(rfduinoReceiver);

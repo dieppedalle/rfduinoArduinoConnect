@@ -41,6 +41,7 @@ import android.os.Binder;
 import android.os.IBinder;
 import android.util.Log;
 
+import java.lang.reflect.Method;
 import java.util.UUID;
 
 /*
@@ -98,6 +99,7 @@ public class RFduinoService extends Service {
             } else if (newState == BluetoothProfile.STATE_DISCONNECTED) {
                 Log.i(TAG, "Disconnected from RFduino.");
                 broadcastUpdate(ACTION_DISCONNECTED);
+
             }
         }
 
@@ -213,6 +215,21 @@ public class RFduinoService extends Service {
         return true;
     }
 
+    private boolean refreshDeviceCache(BluetoothGatt gatt){
+        try {
+            BluetoothGatt localBluetoothGatt = gatt;
+            Method localMethod = localBluetoothGatt.getClass().getMethod("refresh", new Class[0]);
+            if (localMethod != null) {
+                boolean bool = ((Boolean) localMethod.invoke(localBluetoothGatt, new Object[0])).booleanValue();
+                return bool;
+            }
+        }
+        catch (Exception localException) {
+            Log.e(TAG, "An exception occured while refreshing device");
+        }
+        return false;
+    }
+
     /**
      * Connects to the GATT server hosted on the Bluetooth LE device.
      *
@@ -239,7 +256,9 @@ public class RFduinoService extends Service {
         final BluetoothDevice device = mBluetoothAdapter.getRemoteDevice(address);
         // We want to directly connect to the device, so we are setting the autoConnect
         // parameter to false.
-        mBluetoothGatt = device.connectGatt(this, false, mGattCallback);
+        mBluetoothGatt = device.connectGatt(this, true, mGattCallback);
+        //https://stackoverflow.com/questions/22596951/how-to-programmatically-force-bluetooth-low-energy-service-discovery-on-android
+        //refreshDeviceCache(mBluetoothGatt);
         Log.d(TAG, "Trying to create a new connection.");
         mBluetoothDeviceAddress = address;
         return true;
